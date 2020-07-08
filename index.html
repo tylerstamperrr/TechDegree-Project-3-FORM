@@ -34,7 +34,8 @@
             <input type='text' id='city' name='city'><br>
 
             <label for='state'>State:</label><br>
-            <select id='state' name='state'>
+            <select id='state' name='state' size='1'>
+                <option value='choose'>Choose State</option>
                 <option value='AL'>Alabama</option>
                 <option value='AK'>Alaska</option>
                 <option value='AZ'>Arizona</option>
@@ -108,19 +109,25 @@
             </div>
 
             <div class='newsletter-format'>
-            <p>Newsletter format</p>
-            <input type='radio' id='html' name='newstype' value='html'>
-            <label for='html'>HTML</label>
-            
-            <input type='radio' id='plain' name='newstype' value='plain'>
-            <label for='plain'>Plain Text</label>
+                <p>Newsletter format</p>
+
+                <div class='flex-row'>
+                <input type='radio' id='html' name='newstype' value='html'>
+                <label for='html'>HTML</label>
+                </div>
+
+                <div class='flex-row'>
+                <input type='radio' id='plain' name='newstype' value='plain'>
+                <label for='plain'>Plain Text</label>
+                </div>
+            </div>
 
             <label for='comments'>Other topics you'd like to hear about</label><br>
-            <textarea id='comments' name='commanets'></textarea><br>
+            <textarea id='comments' name='comments'></textarea><br>
 
-            <button type='submit'>Sign Up</button>
-                <p>Copyright The Code Review</p>
-            </div>
+            <button class='bottom-btn' type='submit'>Sign Up</button>
+                <p class='footer'>Copyright The Code Review</p>
+            
 
         </fieldset>
     </form>
